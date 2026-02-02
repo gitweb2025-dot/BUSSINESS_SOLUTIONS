@@ -1,0 +1,3014 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>StackBis | Strategic Business Solutions & Consulting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="title"
+      content="StackBis | Strategic Business Solutions & Consulting"
+    />
+    <meta
+      name="description"
+      content="StackBis is a business solutions and consulting firm helping organizations improve performance, streamline operations, and achieve sustainable growth through strategy and execution."
+    />
+    <meta
+      name="keywords"
+      content="business solutions, consulting firm, strategy consulting, operations consulting, project management, process optimization, StackBis"
+    />
+    <meta name="author" content="StackBis" />
+
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="StackBis | Strategic Business Solutions & Consulting"
+    />
+    <meta
+      property="og:description"
+      content="We deliver strategic business solutions that help organizations scale efficiently, optimize operations, and achieve measurable results."
+    />
+
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+    <!-- ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+    <!-- ScrollTo -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollToPlugin.min.js"></script>
+    <!-- ScrollSmoother  -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"></script>
+    <!-- SplitText -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/SplitText.min.js"></script>
+    <!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/EasePack.min.js"></script>
+
+    <!-- SplitType -->
+    <script src="https://unpkg.com/split-type"></script>
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- GOOGLE FONT CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Cinzel:wght@400..900&family=Dancing+Script:wght@400..700&family=Della+Respira&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Julius+Sans+One&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Rajdhani:wght@300;400;500;600;700&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- J-QUERY CDN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- SPLIDE JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+    <!-- LENIS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/lenis@1.3.17/dist/lenis.css"
+    />
+    <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script>
+
+    <!-- TAILWIND CSS -->
+    <link rel="stylesheet" href="./dist/output.css" />
+
+    <!-- CURSOR -->
+    <style>
+      .cursor {
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        pointer-events: none;
+        transform: translate(-50%, -50%);
+      }
+
+      .cursor-dot {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: hsla(187, 92%, 15%, 0.331);
+        opacity: 0.4;
+        transition:
+          width 0.25s ease,
+          height 0.25s ease,
+          opacity 0.25s ease;
+      }
+
+      .cursor.hovered .cursor-dot {
+        width: 76px;
+        height: 76px;
+        opacity: 0.2;
+      }
+    </style>
+
+    <!-- NAVBAR CSS -->
+    <style>
+      .nav-link:hover {
+        color: #033f47;
+      }
+      .cta-btn:hover {
+        background: rgba(0, 0, 0, 0.05);
+      }
+      .submenu a:hover {
+        color: hwb(0 80% 20%);
+      }
+      .hamburger:hover {
+        transform: scale(1.1);
+      }
+    </style>
+
+    <!-- STORY CSS -->
+    <style>
+      .about-btn:hover {
+        box-shadow: 0 14px 30px rgba(163, 230, 53, 0.35);
+      }
+
+      .about-img:hover {
+        transform: scale(1.03);
+      }
+    </style>
+
+    <!-- HIGH IMPACT CSS -->
+    <style>
+      .service-btn:hover {
+        box-shadow: 0 14px 30px rgba(163, 230, 53, 0.35);
+      }
+    </style>
+
+    <!-- STATS CSS -->
+    <style>
+      .results-btn:hover {
+        box-shadow: 0 14px 30px rgba(163, 230, 53, 0.35);
+      }
+    </style>
+
+    <!-- TEAMS CSS -->
+    <style>
+      .team-card {
+        position: relative;
+        background: #fff;
+        text-align: center;
+        padding-bottom: 24px;
+        overflow: hidden;
+      }
+
+      .team-card img {
+        width: 100%;
+        height: 340px;
+        object-fit: cover;
+        object-position: top;
+      }
+
+      .team-card h4 {
+        margin-top: 18px;
+        font-weight: 600;
+      }
+
+      .team-card p {
+        color: #666;
+        font-size: 14px;
+      }
+
+      .team-social {
+        display: flex;
+        justify-content: center;
+        gap: 14px;
+        margin-top: 12px;
+      }
+
+      .team-social i {
+        cursor: pointer;
+        transition: transform 0.3s ease;
+      }
+
+      .team-social i:hover {
+        transform: translateY(-4px);
+      }
+    </style>
+
+    <!-- FAQ CSS -->
+    <style>
+      .faq-question {
+        width: 100%;
+        text-align: left;
+        background: #fff;
+        padding: 40px 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 500;
+        cursor: pointer;
+      }
+
+      .faq-question:hover {
+        background-color: #f1f1eb;
+      }
+
+      .faq-answer {
+        padding: 0 24px;
+        overflow: hidden;
+      }
+
+      .faq-icon {
+        font-size: 20px;
+        transition: transform 0.3s ease;
+      }
+
+      .faq-item.active .faq-icon {
+        transform: rotate(45deg);
+      }
+    </style>
+
+    <!-- CONTACT FORM CSS -->
+    <style>
+      .contact-submit:hover {
+        box-shadow: 0 12px 28px rgba(163, 230, 53, 0.35);
+      }
+    </style>
+
+    <!-- SCROLL TO TOP CSS -->
+    <style>
+      .scroll-top-wrap {
+        position: fixed;
+        right: 24px;
+        bottom: 24px;
+        width: 64px;
+        height: 64px;
+        z-index: 999;
+      }
+
+      .scroll-progress {
+        position: absolute;
+        inset: 0;
+        transform: rotate(-90deg);
+      }
+
+      .progress-bar {
+        stroke-dasharray: 175.93; /* 2π × 28 */
+        stroke-dashoffset: 175.93;
+        transition: stroke-dashoffset 0.15s linear;
+      }
+
+      .scroll-top-btn {
+        width: 64px;
+        height: 64px;
+        border-radius: 9999px;
+        background: #d9f871;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2px;
+        position: relative;
+        z-index: 2;
+      }
+
+      /* HOVER ONLY */
+      .scroll-top-btn:hover {
+        box-shadow: 0 14px 30px rgba(163, 230, 53, 0.35);
+      }
+    </style>
+
+    <!-- FOOTER CSS -->
+    <style>
+      .newsletter-btn:hover {
+        box-shadow: 0 14px 30px rgba(163, 230, 53, 0.35);
+      }
+
+      .footer-link:hover {
+        opacity: 0.7;
+      }
+
+      .social-icon:hover {
+        transform: translateY(-3px);
+      }
+    </style>
+  </head>
+
+  <body class="bg-primary text-black font-primary overflow-x-hidden">
+    <!-- CURSOR -->
+    <div class="cursor">
+      <div class="cursor-dot"></div>
+    </div>
+
+    <!-- LOADER -->
+    <div
+      id="loader"
+      class="fixed inset-0 z-9999 bg-secondary text-white flex items-center justify-center mx-auto"
+    >
+      <h1 id="loaderText" class="text-white text-3xl font-bold">
+        <span>S</span><span>T</span><span>A</span><span>C</span><span>K</span><span>B</span
+        ><span>I</span><span>S</span>
+      </h1>
+    </div>
+
+    <!-- MAIN CONTENTS -->
+    <div id="site" class="opacity-0 transition ease-in-out">
+      <!-- NAVBAR -->
+      <header
+        id="navbar"
+        class="nav-root fixed top-0 left-0 right-0 w-full z-50 bg-primary max-w-7xl mx-auto"
+      >
+        <nav class="px-6">
+          <div class="h-20.5 flex items-center justify-between">
+            <!-- LOGO -->
+            <div class="nav-logo flex items-center gap-3">
+              <span class="text-2xl font-semibold text-secondary"
+                >StackBis</span
+              >
+            </div>
+
+            <!-- DESKTOP NAV -->
+            <nav
+              class="nav-desktop hidden lg:flex items-center gap-12 relative"
+            >
+              <!-- HOME -->
+              <div class="nav-item has-sub relative flex items-center gap-2">
+                <a href="./index.html" class="nav-link">Home</a>
+                <button class="submenu-toggle" type="button">+</button>
+
+                <div
+                  class="submenu w-32 absolute top-12 left-0 bg-secondary text-white z-40 rounded-xl p-6 space-y-3"
+                >
+                  <a href="./404.html" class="block">Home 1</a>
+                  <a href="./404.html" class="block">Home 2</a>
+                  <a href="./404.html" class="block">Home 3</a>
+                </div>
+              </div>
+
+              <a href="./404.html" class="nav-link">About</a>
+
+              <!-- SERVICES -->
+              <div class="nav-item has-sub relative flex items-center gap-2">
+                <a href="./404.html" class="nav-link">Services</a>
+                <button class="submenu-toggle" type="button">+</button>
+
+                <div
+                  class="submenu w-56 absolute top-12 left-0 bg-secondary text-white z-40 rounded-xl p-6 space-y-3 flex flex-col justify-center"
+                >
+                  <a href="./404.html">Cloud Services</a>
+                  <a href="./404.html">Cyber Security</a>
+                  <a href="./404.html">IT Consulting</a>
+                </div>
+              </div>
+
+              <a href="./404.html" class="nav-link">Blog</a>
+              <a href="./404.html" class="nav-link">Contact</a>
+            </nav>
+
+            <!-- CTA -->
+            <a
+              href="./404.html"
+              class="nav-cta hidden lg:inline-block px-8 py-3 rounded-full bg-secondary text-white"
+            >
+              <button
+                class="cta-btn flex items-center gap-3 font-semibold cursor-pointer"
+              >
+                GET A QUOTE
+                <span
+                  class="w-10 h-10 rounded-full bg-black/20 flex items-center justify-center"
+                >
+                  <i class="fa-solid fa-plus"></i>
+                </span>
+              </button>
+            </a>
+
+            <!-- MOBILE ICON -->
+            <button class="hamburger lg:hidden">
+              <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+          </div>
+        </nav>
+
+        <!-- MOBILE MENU -->
+        <div class="mobile-menu fixed hidden inset-0 bg-primary z-50 p-8">
+          <button class="mobile-close mb-10">
+            <i class="fa-solid fa-xmark text-2xl"></i>
+          </button>
+
+          <nav class="mobile-links flex flex-col gap-6 text-xl">
+            <div
+              class="nav-item has-sub relative flex items-center justify-between"
+            >
+              <a href="./index.html" class="nav-link">Home</a>
+              <button class="submenu-toggle" type="button">+</button>
+
+              <div
+                class="submenu absolute left-0 top-full mt-3 bg-secondary text-white rounded-xl p-6 space-y-3 flex flex-col justify-center w-full z-50"
+              >
+                <a href="./404.html">Home 1</a>
+                <a href="./404.html">Home 2</a>
+                <a href="./404.html">Home 3</a>
+              </div>
+            </div>
+
+            <a href="./404.html" class="nav-link">About</a>
+
+            <div
+              class="nav-item has-sub relative flex items-center justify-between"
+            >
+              <a href="./404.html" class="nav-link">Services</a>
+              <button class="submenu-toggle" type="button">+</button>
+
+              <div
+                class="submenu absolute left-0 top-full mt-3 bg-secondary text-white rounded-xl p-6 space-y-3 flex flex-col justify-center w-full z-50"
+              >
+                <a href="./404.html">Cloud Services</a>
+                <a href="./404.html">Cyber Security</a>
+                <a href="./404.html">IT Consulting</a>
+              </div>
+            </div>
+
+            <a href="./404.html" class="nav-link">Blog</a>
+            <a href="./404.html" class="nav-link">Contact</a>
+          </nav>
+        </div>
+      </header>
+
+      <!-- HOME -->
+      <section id="home" class="py-28 overflow-hidden">
+        <div
+          class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center hero-root"
+        >
+          <!-- LEFT -->
+          <div class="hero-text-wrap">
+            <h1
+              class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight hero-title"
+            >
+              Accelerating your<br />
+              <span class="relative inline-block">
+                business's
+                <span
+                  class="absolute left-0 -bottom-2 w-full h-1.5 bg-teal-700 rounded-full"
+                ></span>
+              </span>
+              growth and<br />
+              performance
+            </h1>
+
+            <p class="mt-6 text-zinc-600 max-w-xl hero-desc">
+              Strategic solutions built to scale Optimized for performance and
+              efficiency Designed to deliver measurable growth.
+            </p>
+
+            <div class="flex flex-wrap items-center gap-6 mt-10 hero-actions">
+              <a
+                href="./404.html"
+                class="hero-btn-primary bg-lime-300 px-8 py-4 rounded-md font-medium inline-block"
+              >
+                Free Consultation
+              </a>
+
+              <a
+                href="./404.html"
+                class="hero-btn-secondary border border-black px-8 py-4 rounded-md font-medium inline-block"
+              >
+                Our Services
+              </a>
+            </div>
+          </div>
+
+          <!-- RIGHT -->
+          <div class="hero-media-wrap relative">
+            <div class="relative z-10">
+              <img
+                src="./src/assets/home.webp"
+                class="w-full h-96 object-cover object-top rounded-br-4xl"
+                alt="Hero"
+              />
+
+              <!-- PLAY -->
+              <button
+                class="hero-play absolute -left-10 top-3 w-20 h-20 bg-secondary rounded-full flex items-center justify-center"
+              >
+                <i class="fa-solid fa-play text-white text-2xl"></i>
+              </button>
+            </div>
+
+            <!-- FRAME -->
+            <div
+              class="absolute inset-0 border border-black rounded-lg translate-x-4 translate-y-4"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- VIDEO MODAL -->
+      <div
+        class="fixed inset-0 z-50 bg-black/70 hidden items-center justify-center hero-modal"
+      >
+        <div
+          class="relative w-full max-w-4xl bg-black rounded-xl overflow-hidden"
+        >
+          <button
+            class="absolute top-4 right-4 text-white text-2xl hero-modal-close"
+          >
+            &times;
+          </button>
+
+          <div class="aspect-video hero-video-container"></div>
+        </div>
+      </div>
+
+      <!-- STORY -->
+      <section class="overflow-hidden">
+        <div
+          class="bg-white py-28 max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-24 items-center about-root"
+        >
+          <!-- LEFT IMAGE GRID -->
+          <div class="about-images-wrap">
+            <div class="grid grid-cols-2 gap-6">
+              <img
+                src="./src/assets/s1.webp"
+                class="about-img w-full h-80 object-cover"
+                alt="about"
+              />
+
+              <img
+                src="./src/assets/s2.webp"
+                class="about-img w-full h-56 object-cover mt-auto"
+                alt="about"
+              />
+
+              <img
+                src="./src/assets/s3.webp"
+                class="about-img w-full h-56 object-cover"
+                alt="about"
+              />
+
+              <img
+                src="./src/assets/s4.webp"
+                class="about-img w-full h-80 object-cover"
+                alt="about"
+              />
+            </div>
+          </div>
+
+          <!-- RIGHT CONTENT -->
+          <div class="about-content-wrap">
+            <h2
+              class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight about-title"
+            >
+              The story behind<br />
+              <span class="relative inline-block">
+                our consulting firm
+                <span
+                  class="absolute left-0 -bottom-2 w-full h-1 bg-teal-700"
+                ></span>
+              </span>
+            </h2>
+
+            <p class="mt-6 text-zinc-600 max-w-xl about-desc">
+              Built on experience, strategy, and results Guiding businesses
+              through growth and change Focused on long-term value, not
+              short-term wins
+            </p>
+
+            <!-- STATS -->
+            <div class="flex gap-16 mt-10 about-stats">
+              <div>
+                <h3 class="text-3xl font-bold">1200+</h3>
+                <p class="text-zinc-600 mt-1">Companies helped</p>
+              </div>
+
+              <div>
+                <h3 class="text-3xl font-bold">300M</h3>
+                <p class="text-zinc-600 mt-1">Team members</p>
+              </div>
+            </div>
+
+            <!-- BUTTON -->
+            <a
+              href="./404.html"
+              class="about-btn inline-block mt-12 bg-secondary text-white px-8 py-4 rounded-md font-medium transition"
+            >
+              About Our Firm
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- HIGH IMPACT -->
+      <section class="bg-primary py-28 overflow-hidden">
+        <div
+          class="max-w-7xl mx-auto grid grid-rows-2 px-6 gap-12 services-root"
+        >
+          <!-- LEFT INTRO -->
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div class="services-intro sm:col-span-2 lg:col-span-1">
+              <h2
+                class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight services-title"
+              >
+                High-impact<br />
+                <span class="relative inline-block">
+                  services
+                  <span
+                    class="absolute left-0 -bottom-2 w-full h-1.5 bg-teal-700"
+                  ></span>
+                </span>
+              </h2>
+
+              <p class="mt-6 text-zinc-600 services-desc">
+                Strategic services designed for real results Focused on
+                performance, efficiency, and scale Built to deliver measurable
+                business impact
+              </p>
+
+              <a
+                href="./404.html"
+                class="service-btn mt-8 bg-lime-300 px-8 py-4 rounded-md font-medium inline-block"
+              >
+                Browse All Services
+              </a>
+            </div>
+
+            <div class="service-card1 bg-white p-10 text-center h-full">
+              <div
+                class="w-20 h-20 mx-auto rounded-full border border-teal-700 flex items-center justify-center"
+              >
+                <i
+                  class="fa-solid fa-diagram-project text-teal-700 text-xl"
+                ></i>
+              </div>
+              <h3 class="mt-6 font-semibold text-lg">Project Management</h3>
+              <p class="mt-3 text-zinc-600 text-sm">
+                Delivering projects on time and within scope Aligning resources,
+                timelines, and stakeholders Ensuring execution with
+                accountability and control
+              </p>
+            </div>
+
+            <div class="service-card1 bg-white p-10 text-center h-full">
+              <div
+                class="w-20 h-20 mx-auto rounded-full border border-teal-700 flex items-center justify-center"
+              >
+                <i class="fa-solid fa-gears text-teal-700 text-xl"></i>
+              </div>
+              <h3 class="mt-6 font-semibold text-lg">Process Development</h3>
+              <p class="mt-3 text-zinc-600 text-sm">
+                Designing efficient workflows that eliminate waste Standardizing
+                operations for scalability and clarity Improving productivity
+                through continuous optimization
+              </p>
+            </div>
+          </div>
+
+          <!-- RIGHT GRID -->
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10 services-grid">
+            <!-- CARD -->
+
+            <div class="service-card bg-white p-10 text-center h-full">
+              <div
+                class="w-20 h-20 mx-auto rounded-full border border-teal-700 flex items-center justify-center"
+              >
+                <i class="fa-solid fa-handshake text-teal-700 text-xl"></i>
+              </div>
+              <h3 class="mt-6 font-semibold text-lg">Quality Assurance</h3>
+              <p class="mt-3 text-zinc-600 text-sm">
+                Ensuring consistency, accuracy, and operational reliability
+                Reducing risk through structured quality controls Maintaining
+                high standards across all deliverables
+              </p>
+            </div>
+
+            <div class="service-card bg-white p-10 text-center h-full">
+              <div
+                class="w-20 h-20 mx-auto rounded-full border border-teal-700 flex items-center justify-center"
+              >
+                <i class="fa-solid fa-users text-teal-700 text-xl"></i>
+              </div>
+              <h3 class="mt-6 font-semibold text-lg">Human Resources</h3>
+              <p class="mt-3 text-zinc-600 text-sm">
+                Building high-performing teams through structured people
+                strategies Improving hiring, retention, and workforce alignment
+                Supporting sustainable organizational growth
+              </p>
+            </div>
+
+            <div class="service-card bg-white p-10 text-center h-full">
+              <div
+                class="w-20 h-20 mx-auto rounded-full border border-teal-700 flex items-center justify-center"
+              >
+                <i class="fa-solid fa-sitemap text-teal-700 text-xl"></i>
+              </div>
+              <h3 class="mt-6 font-semibold text-lg">Operation & Delegation</h3>
+              <p class="mt-3 text-zinc-600 text-sm">
+                Streamlining operations for maximum efficiency Delegating
+                responsibilities with clarity and control Enabling teams to
+                perform at their best
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STATS -->
+      <section
+        class="relative max-w-7xl mx-auto bg-teal-900 py-16 overflow-hidden"
+      >
+        <!-- Overlay -->
+        <div class="max-w-7xl mx-auto w-full absolute inset-0 bg-teal-900/80">
+          <img
+            class="w-full h-full object-cover object-top brightness-25"
+            src="./src/assets/home.webp"
+            alt="bg"
+          />
+        </div>
+
+        <div class="relative px-6 text-center results-root">
+          <!-- HEADING -->
+          <h2
+            class="text-white text-3xl md:text-4xl lg:text-5xl font-bold leading-tight results-title reveal-type"
+          >
+            Results behind our <br />
+            <span class="relative inline-block">
+              Consulting firm
+              <span
+                class="absolute left-0 -bottom-2 w-full h-1.5 bg-lime-300"
+              ></span>
+            </span>
+          </h2>
+
+          <p class="mt-6 text-white/80 max-w-2xl mx-auto results-desc">
+            Focused on delivering measurable outcomes Driven by strategy,
+            execution, and accountability Proven through long-term client
+            success.
+          </p>
+
+          <!-- STATS -->
+          <div
+            class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-12 results-stats"
+          >
+            <div class="text-center result-item">
+              <h3 class="text-white text-4xl font-bold">
+                <span class="count-num" data-count="100">0</span>+
+              </h3>
+              <p class="mt-2 text-white/80">Companies helped</p>
+            </div>
+
+            <div class="text-center result-item">
+              <h3 class="text-white text-4xl font-bold">
+                <span class="count-num" data-count="180">0</span>+
+              </h3>
+              <p class="mt-2 text-white/80">Team members</p>
+            </div>
+
+            <div class="text-center result-item">
+              <h3 class="text-white text-4xl font-bold">
+                <span class="count-num" data-count="250">0</span>M
+              </h3>
+              <p class="mt-2 text-white/80">Revenue generated</p>
+            </div>
+
+            <div class="text-center result-item">
+              <h3 class="text-white text-4xl font-bold">
+                <span class="count-num" data-count="300">0</span>+
+              </h3>
+              <p class="mt-2 text-white/80">Successful projects</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STEPS -->
+      <section class="py-28 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 process-root bg-primary">
+          <!-- TITLE -->
+          <h2
+            class="text-center text-3xl md:text-4xl lg:text-5xl font-bold mb-16 process-title"
+          >
+            A simple yet powerful<br />
+            and efficient
+            <span class="relative inline-block">
+              process
+              <span
+                class="absolute left-0 -bottom-2 w-full h-1 bg-teal-700"
+              ></span>
+            </span>
+          </h2>
+
+          <!-- TABS -->
+          <div class="flex flex-wrap justify-center gap-6 mb-20 process-tabs">
+            <button
+              class="process-tab active-tab flex items-center cursor-pointer gap-3 px-8 py-4 bg-lime-300 text-white rounded"
+              data-step="0"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+              1. Analysis & Research
+            </button>
+
+            <button
+              class="process-tab flex items-center cursor-pointer gap-3 px-8 py-4 bg-lime-300 rounded"
+              data-step="1"
+            >
+              <i class="fa-solid fa-brain"></i>
+              2. Project Execution
+            </button>
+
+            <button
+              class="process-tab flex items-center cursor-pointer gap-3 px-8 py-4 bg-lime-300 rounded"
+              data-step="2"
+            >
+              <i class="fa-solid fa-rocket"></i>
+              3. Project Launch
+            </button>
+          </div>
+
+          <!-- CONTENT -->
+          <div class="grid lg:grid-cols-2 gap-20 items-center process-stage">
+            <!-- IMAGE -->
+            <div class="process-image-wrap">
+              <img
+                src="./src/assets/p1.webp"
+                class="w-full rounded-lg process-image"
+                alt="process"
+              />
+            </div>
+
+            <!-- TEXT -->
+            <div class="process-content">
+              <div
+                class="w-16 h-16 rounded-full bg-lime-300 flex items-center justify-center mb-6"
+              >
+                <i class="fa-solid fa-magnifying-glass text-black"></i>
+              </div>
+
+              <h3 class="text-2xl font-semibold process-heading">
+                1. Analysis & Research
+              </h3>
+
+              <p class="mt-4 text-zinc-600 process-desc">
+                We begin by conducting in-depth research and data analysis to
+                understand business challenges, market conditions, and
+                operational gaps. Our approach focuses on identifying root
+                causes, evaluating opportunities, and gathering actionable
+                insights that support informed decision-making. This foundation
+                ensures that every strategy we develop is grounded in evidence,
+                aligned with business objectives, and built for long-term
+                success.
+              </p>
+
+              <a
+                href="./404.html"
+                class="process-btn mt-8 bg-lime-300 px-8 py-4 rounded font-medium inline-block"
+              >
+                Get In Touch
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CASE STUDIES -->
+      <section class="overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 case-root py-28 bg-secondary">
+          <!-- HEADER -->
+          <div
+            class="flex flex-col lg:flex-row justify-between gap-8 case-header"
+          >
+            <div>
+              <h2
+                class="text-white text-3xl md:text-4xl lg:text-5xl font-bold case-title reveal-type"
+              >
+                Our Case Studies
+              </h2>
+              <p class="mt-4 text-white/80 max-w-xl case-desc">
+                From strategy to execution Solving complex business problems
+                Delivering results that matter, Data-driven decisions in action
+                Operational improvements with measurable impact Built on
+                experience and execution
+              </p>
+            </div>
+
+            <a
+              href="./404.html"
+              class="case-btn border border-white h-fit px-8 py-4 text-white rounded-md font-medium inline-block mt-auto"
+            >
+              Browse All Cases
+            </a>
+          </div>
+
+          <!-- CASE GRID -->
+          <div class="mt-20 grid md:grid-cols-3 gap-10 case-grid">
+            <!-- CARD -->
+            <div class="case-card bg-primary rounded-xl">
+              <img
+                src="./src/assets/c1.webp"
+                class="w-full h-64 object-cover object-top"
+                alt="case"
+              />
+
+              <div class="p-4 md:p-8 relative">
+                <a
+                  href="./404.html"
+                  class="absolute right-6 -top-5 w-10 h-10 bg-lime-300 rounded-full flex items-center justify-center case-arrow"
+                >
+                  <i class="fa-solid fa-arrow-right text-black"></i>
+                </a>
+
+                <h3 class="font-semibold text-lg">
+                  We bring idea into reality for
+                </h3>
+                <p class="mt-3 text-zinc-600 text-sm">
+                  Turning concepts into practical solutions Guided by strategy,
+                  execution, and insight Focused on measurable business
+                  outcomes. Delivering complex projects with clarity and control
+                  Aligning scope, timelines, and stakeholders Ensuring
+                  predictable outcomes and measurable success
+                </p>
+              </div>
+            </div>
+
+            <!-- CARD -->
+            <div class="case-card bg-primary rounded-xl">
+              <img
+                src="./src/assets/c2.webp"
+                class="w-full h-64 object-cover object-top"
+                alt="case"
+              />
+
+              <div class="p-4 md:p-8 relative">
+                <a
+                  href="./404.html"
+                  class="absolute right-6 -top-5 w-10 h-10 bg-lime-300 rounded-full flex items-center justify-center case-arrow"
+                >
+                  <i class="fa-solid fa-arrow-right text-black"></i>
+                </a>
+                <h3 class="font-semibold text-lg">
+                  Project management case study
+                </h3>
+                <p class="mt-3 text-zinc-600 text-sm">
+                  Delivering complex projects with clarity and control Aligning
+                  scope, timelines, and stakeholders Ensuring predictable
+                  outcomes and measurable success. Turning concepts into
+                  practical solutions Guided by strategy, execution, and insight
+                  Focused on measurable business outcomes
+                </p>
+              </div>
+            </div>
+
+            <!-- CARD -->
+            <div class="case-card bg-primary rounded-xl">
+              <img
+                src="./src/assets/c3.webp"
+                class="w-full h-64 object-cover object-top"
+                alt="case"
+              />
+
+              <div class="p-4 md:p-8 relative">
+                <a
+                  href="./404.html"
+                  class="absolute right-6 -top-5 w-10 h-10 bg-lime-300 rounded-full flex items-center justify-center case-arrow"
+                >
+                  <i class="fa-solid fa-arrow-right text-black"></i>
+                </a>
+                <h3 class="font-semibold text-lg">Project Execution Process</h3>
+                <p class="mt-3 text-zinc-600 text-sm">
+                  Ensuring predictable outcomes and measurable success. Turning
+                  concepts into practical solutions Guided by strategy,
+                  execution, and insight Focused on measurable business outcomes
+                  andDelivering complex projects with clarity and control
+                  Aligning scope, timelines, and stakeholders
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TEAM -->
+      <section class="py-24 bg-[#f8f8f2] team-section overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+          <!-- HEADER -->
+          <div
+            class="flex flex-wrap items-center justify-between gap-6 mb-14 team-header"
+          >
+            <h2
+              class="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight"
+            >
+              The amazing team<br />
+              <span class="relative inline-block">
+                behind our company
+                <span
+                  class="absolute left-0 -bottom-2 w-full h-1 bg-teal-700 rounded-full"
+                ></span>
+              </span>
+            </h2>
+
+            <div class="flex gap-3 team-nav">
+              <a class="px-6 py-4 border rounded-lg" href="./404.html"
+                >View All</a
+              >
+            </div>
+          </div>
+
+          <!-- TEAM GRID -->
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 team-grid"
+          >
+            <!-- CARD -->
+            <div class="team-card">
+              <img src="./src/assets/tm1.webp" alt="tm1" />
+              <h4>Olivia Quinn</h4>
+              <p>Business Coach</p>
+              <div class="team-social">
+                <a href="./404.html"><i class="fa-brands fa-twitter"></i></a>
+                <a href="./404.html">
+                  <i class="fa-brands fa-linkedin-in"></i
+                ></a>
+                <a href="./404.html"
+                  ><i class="fa-brands fa-pinterest-p"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- CARD WITH OVERLAY -->
+            <div class="team-card">
+              <img src="./src/assets/tm2.webp" alt="tm2" />
+              <div class="team-overlay">
+                <h4>Ava Jensen</h4>
+                <p>Organizational Expert</p>
+                <div class="team-social">
+                  <a href="./404.html"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="./404.html">
+                    <i class="fa-brands fa-linkedin-in"></i
+                  ></a>
+                  <a href="./404.html"
+                    ><i class="fa-brands fa-pinterest-p"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- CARD -->
+            <div class="team-card">
+              <img src="./src/assets/tm3.webp" alt="tm3" />
+              <h4>Lucas Foster</h4>
+              <p>Financial Consultant</p>
+              <div class="team-social">
+                <a href="./404.html"><i class="fa-brands fa-twitter"></i></a>
+                <a href="./404.html">
+                  <i class="fa-brands fa-linkedin-in"></i
+                ></a>
+                <a href="./404.html"
+                  ><i class="fa-brands fa-pinterest-p"></i
+                ></a>
+              </div>
+            </div>
+
+            <!-- CARD -->
+            <div class="team-card">
+              <img src="./src/assets/tm4.webp" alt="tm4" />
+              <h4>Ethan Brooks</h4>
+              <p>Strategy Analyst</p>
+              <div class="team-social">
+                <a href="./404.html"><i class="fa-brands fa-twitter"></i></a>
+                <a href="./404.html">
+                  <i class="fa-brands fa-linkedin-in"></i
+                ></a>
+                <a href="./404.html"
+                  ><i class="fa-brands fa-pinterest-p"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="py-24 bg-primary faq-section overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+          <!-- HEADER -->
+          <div class="flex items-center justify-between mb-12 faq-header">
+            <h2 class="text-3xl font-semibold">Frequently Ask Question</h2>
+            <a
+              href="./404.html"
+              class="bg-lime-300 px-6 py-3 rounded-md font-medium inline-block"
+            >
+              Get In Touch
+            </a>
+          </div>
+
+          <!-- FAQ GRID -->
+          <div class="grid md:grid-cols-2 gap-16 faq-grid">
+            <!-- COLUMN -->
+            <div class="faq-column">
+              <div class="faq-item">
+                <button class="faq-question">
+                  Do you have examples of past case results?
+                  <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    Yes. We’ve successfully delivered IT consulting, digital
+                    transformation, and process optimization projects for
+                    startups, mid-sized businesses, and enterprises across
+                    multiple industries.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  How can I become a long-term partner?
+                  <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    You can partner with us through ongoing managed services,
+                    dedicated consulting retainers, or enterprise-level
+                    technology support agreements tailored to your growth goals.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  How can my team get involved during the project?
+                  <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    We collaborate closely with your internal teams through
+                    regular strategy sessions, progress reviews, and transparent
+                    reporting to ensure alignment and knowledge sharing.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- COLUMN -->
+            <div class="faq-column">
+              <div class="faq-item">
+                <button class="faq-question">
+                  How much do your consulting services cost?
+                  <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    Pricing depends on project scope, complexity, and duration.
+                    We offer flexible engagement models including fixed-price,
+                    milestone-based, and monthly retainers.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  Do you provide support after project completion?
+                  <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    Absolutely. We offer post-project support, optimization
+                    reviews, system monitoring, and long-term advisory services
+                    to ensure sustained success.
+                  </p>
+                </div>
+              </div>
+
+              <div class="faq-item">
+                <button class="faq-question">
+                  Who should I contact for further information?
+                  <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    You can reach out directly through our contact form or speak
+                    with one of our consultants to discuss your business
+                    challenges and objectives in detail.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIAL -->
+      <section
+        class="max-w-7xl mx-auto w-full py-12 md:py-20 px-4 md:px-8 lg:px-16 bg-gray-50 overflow-hidden"
+      >
+        <div class="mx-auto grid lg:grid-cols-2 gap-14">
+          <!-- FEATURED TESTIMONIAL CARD -->
+          <div
+            id="testimonialCard"
+            class="relative p-10 bg-white rounded-3xl shadow-xl border border-gray-200 transition-all duration-500"
+          >
+            <!-- Decorative Quote Badge -->
+            <div
+              class="absolute -top-6 left-8 bg-teal-600 text-white p-4 rounded-full shadow-lg text-3xl"
+            >
+              <i class="fa-solid fa-quote-left"></i>
+            </div>
+
+            <!-- Avatar -->
+            <div
+              id="avatarWrapper"
+              class="absolute -top-10 right-8 transition-all duration-500"
+            >
+              <img
+                id="bigAvatar"
+                src="./src/assets/t1.webp"
+                alt="t1"
+                class="w-20 h-20 rounded-full shadow-xl border-4 border-white object-cover transform transition-all duration-500"
+              />
+            </div>
+
+            <!-- Text -->
+            <p
+              id="bigTestimonial"
+              class="mt-12 text-gray-600 text-lg leading-relaxed opacity-100 transition-opacity duration-500"
+            >
+              Loading...
+            </p>
+
+            <!-- Stars -->
+            <div
+              id="bigStars"
+              class="flex text-yellow-400 text-2xl gap-1 mt-6 transition-opacity duration-500"
+            ></div>
+
+            <!-- Name -->
+            <h3
+              id="bigName"
+              class="text-xl font-bold text-gray-800 mt-5 transition-opacity duration-500"
+            >
+              Client Name
+            </h3>
+            <p
+              id="bigRole"
+              class="text-gray-500 -mt-1 transition-opacity duration-500"
+            >
+              Profession
+            </p>
+          </div>
+
+          <!-- RIGHT SIDE USER LIST -->
+          <div class="space-y-6">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 mb-5">
+              What Our Clients Say
+            </h2>
+
+            <!-- User Buttons -->
+            <div
+              class="testimonial-btn flex items-center gap-4 p-4 bg-white rounded-xl shadow-md border border-gray-200 cursor-pointer transition-all hover:shadow-xl"
+              data-index="0"
+            >
+              <img
+                src="./src/assets/t1.webp"
+                class="w-14 h-14 rounded-full object-cover shadow-md"
+              />
+              <div>
+                <h3 class="text-lg font-semibold text-gray-800">David Brown</h3>
+                <p class="text-gray-500 text-sm">Dental Surgeon</p>
+              </div>
+            </div>
+
+            <div
+              class="testimonial-btn flex items-center gap-4 p-4 bg-white rounded-xl shadow-md border border-gray-200 cursor-pointer transition-all hover:shadow-xl"
+              data-index="1"
+            >
+              <img
+                src="./src/assets/t2.webp"
+                class="w-14 h-14 rounded-full object-cover shadow-md"
+              />
+              <div>
+                <h3 class="text-lg font-semibold text-gray-800">
+                  Wesley Bates
+                </h3>
+                <p class="text-gray-500 text-sm">Dental Specialist</p>
+              </div>
+            </div>
+
+            <div
+              class="testimonial-btn flex items-center gap-4 p-4 bg-white rounded-xl shadow-md border border-gray-200 cursor-pointer transition-all hover:shadow-xl"
+              data-index="2"
+            >
+              <img
+                src="./src/assets/t3.webp"
+                class="w-14 h-14 rounded-full object-cover shadow-md"
+              />
+              <div>
+                <h3 class="text-lg font-semibold text-gray-800">
+                  Anshika Smith
+                </h3>
+                <p class="text-gray-500 text-sm">Brain Surgeon</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BLOGS -->
+      <section
+        class="max-w-7xl mx-auto w-full bg-secondary py-28 overflow-hidden"
+      >
+        <div class="px-6 blog-root">
+          <!-- HEADER -->
+          <div
+            class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 blog-header"
+          >
+            <h2
+              class="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight blog-title text-white"
+            >
+              Browse <span class="underline decoration-2">our blogs</span> &
+              <br />
+              resources Case Studies
+            </h2>
+
+            <a
+              href="./404.html"
+              class="browse-btn bg-lime-300 px-8 py-4 rounded-md font-medium inline-block"
+            >
+              Browse All Articles
+            </a>
+          </div>
+
+          <!-- BLOG GRID -->
+          <div
+            class="mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-10 blog-grid"
+          >
+            <!-- CARD -->
+            <article class="blog-card bg-primary rounded-br-lg p-6">
+              <img
+                src="./src/assets/b1.webp"
+                class="w-full h-48 object-cover"
+                alt="blog"
+              />
+
+              <div class="mt-5 text-sm text-zinc-500 flex items-center gap-4">
+                <span><i class="fa-regular fa-user"></i> Consultip</span>
+                <span
+                  ><i class="fa-regular fa-calendar"></i> August 11, 2023</span
+                >
+              </div>
+
+              <h3 class="mt-4 font-semibold leading-snug">
+                Building Meaningful Connections for Professional Growth
+              </h3>
+
+              <a
+                href="./404.html"
+                class="blog-btn inline-block mt-6 border border-black px-6 py-2 rounded transition"
+              >
+                Read More
+              </a>
+            </article>
+
+            <!-- CARD -->
+            <article class="blog-card bg-primary rounded-lg p-6">
+              <img
+                src="./src/assets/b2.webp"
+                class="w-full h-48 object-cover"
+                alt="blog"
+              />
+
+              <div class="mt-5 text-sm text-zinc-500 flex items-center gap-4">
+                <span><i class="fa-regular fa-user"></i> Consultip</span>
+                <span
+                  ><i class="fa-regular fa-calendar"></i> August 11, 2023</span
+                >
+              </div>
+
+              <h3 class="mt-4 font-semibold leading-snug">
+                How effective consulting can drive business growth
+              </h3>
+
+              <a
+                href="./404.html"
+                class="blog-btn inline-block mt-6 border border-black px-6 py-2 rounded transition"
+              >
+                Read More
+              </a>
+            </article>
+
+            <!-- CARD -->
+            <article class="blog-card bg-primary rounded-lg p-6">
+              <img
+                src="./src/assets/b3.webp"
+                class="w-full h-48 object-cover"
+                alt="blog"
+              />
+
+              <div class="mt-5 text-sm text-zinc-500 flex items-center gap-4">
+                <span><i class="fa-regular fa-user"></i> Consultip</span>
+                <span
+                  ><i class="fa-regular fa-calendar"></i> August 11, 2023</span
+                >
+              </div>
+
+              <h3 class="mt-4 font-semibold leading-snug">
+                Marketing tools you should be paying attention in 2023
+              </h3>
+
+              <a
+                href=""
+                class="blog-btn inline-block mt-6 border border-black px-6 py-2 rounded transition"
+              >
+                Read More
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONATCT FORM -->
+      <section class="py-28 bg-primary contact-form-section overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20">
+          <!-- LEFT -->
+          <div class="contact-copy">
+            <h2 class="text-4xl font-semibold mb-6">
+              Contact us It’s<br />
+              <span class="relative inline-block">
+                Easy
+                <span
+                  class="absolute left-0 -bottom-2 w-full h-1 bg-teal-700 rounded-full"
+                ></span>
+              </span>
+            </h2>
+
+            <p class="text-zinc-600 max-w-md mb-10">
+              Reach out to our consulting team to discuss your business
+              challenges, digital transformation goals, or service inquiries.
+              We’ll respond promptly with the right solution.
+            </p>
+
+            <a
+              href="./404.html"
+              class="border border-black px-6 py-3 rounded-md inline-block"
+            >
+              Visit FAQ
+            </a>
+          </div>
+
+          <!-- RIGHT -->
+          <form class="contact-form-wrapper space-y-6">
+            <div class="grid sm:grid-cols-2 gap-6">
+              <div>
+                <label class="block mb-2 text-sm">Full Name</label>
+                <input
+                  type="text"
+                  class="w-full border px-4 py-3"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+
+              <div>
+                <label class="block mb-2 text-sm">Email</label>
+                <input
+                  type="email"
+                  class="w-full border px-4 py-3 contact-email"
+                  placeholder="Email address"
+                  required
+                  title=""
+                />
+              </div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 gap-6">
+              <div>
+                <label class="block mb-2 text-sm">Phone Number</label>
+                <input
+                  type="tel"
+                  class="w-full border px-4 py-3"
+                  placeholder="Phone number"
+                />
+              </div>
+
+              <div>
+                <label class="block mb-2 text-sm">Service</label>
+                <select class="w-full border px-4 py-3">
+                  <option value="">Select service</option>
+                  <option>IT Consulting</option>
+                  <option>Cloud Solutions</option>
+                  <option>Cyber Security</option>
+                  <option>Digital Transformation</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label class="block mb-2 text-sm">Message</label>
+              <textarea
+                class="w-full border px-4 py-3 h-36"
+                placeholder="Message"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="bg-lime-300 px-8 py-4 rounded-md font-medium contact-submit"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="text-white overflow-hidden">
+        <!-- FOOTER MAIN -->
+        <div class="max-w-7xl bg-secondary mx-auto px-6 py-20 footer-root">
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-14 footer-grid"
+          >
+            <!-- BRAND -->
+            <div class="footer-col">
+              <div class="flex items-center gap-3 mb-6">
+                <div
+                  class="w-10 h-10 rounded-full bg-lime-300 flex items-center justify-center text-black font-bold"
+                >
+                  S
+                </div>
+                <span class="text-2xl font-bold">StackBis</span>
+              </div>
+
+              <p class="text-white/80 leading-relaxed">
+                We provide strategic business solutions that help organizations
+                operate more efficiently, scale with confidence, and achieve
+                measurable results.
+              </p>
+
+              <div class="flex gap-4 mt-8">
+                <a
+                  href="./404.html"
+                  class="social-icon w-10 h-10 rounded-full bg-white text-black flex items-center justify-center transition"
+                >
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a
+                  href="./404.html"
+                  class="social-icon w-10 h-10 rounded-full bg-white text-black flex items-center justify-center transition"
+                >
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a
+                  href="./404.html"
+                  class="social-icon w-10 h-10 rounded-full bg-white text-black flex items-center justify-center transition"
+                >
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a
+                  href="./404.html"
+                  class="social-icon w-10 h-10 rounded-full bg-white text-black flex items-center justify-center transition"
+                >
+                  <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- USEFUL LINKS -->
+            <div class="footer-col">
+              <h4 class="text-xl font-semibold mb-6">Useful Link</h4>
+              <ul class="space-y-4">
+                <li>
+                  <a href="./404.html" class="footer-link transition"
+                    >› About Our Company</a
+                  >
+                </li>
+                <li>
+                  <a href="./404.html" class="footer-link transition"
+                    >› Latest Case Studies</a
+                  >
+                </li>
+                <li>
+                  <a href="./404.html" class="footer-link transition"
+                    >› Contact With Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- SERVICES -->
+            <div class="footer-col">
+              <h4 class="text-xl font-semibold mb-6">Our Services</h4>
+              <ul class="space-y-4">
+                <li>
+                  <a href="./404.html" class="footer-link transition"
+                    >› Project Management</a
+                  >
+                </li>
+                <li>
+                  <a href="./404.html" class="footer-link transition"
+                    >› Process Development</a
+                  >
+                </li>
+                <li>
+                  <a class="footer-link transition"
+                    >› Operation & Delegations</a
+                  >
+                </li>
+                <li>
+                  <a href="./404.html" class="footer-link transition"
+                    >› Human Resources</a
+                  >
+                </li>
+                <li>
+                  <a href="./404.html" class="footer-link transition"
+                    >› Business Analysis</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- LATEST POST -->
+            <div class="footer-col">
+              <h4 class="text-xl font-semibold mb-6">Latest Post</h4>
+
+              <div class="space-y-6">
+                <div>
+                  <p class="text-sm text-white/70">February 19, 2025</p>
+                  <p class="font-semibold">Business Establishment</p>
+                </div>
+
+                <div>
+                  <p class="text-sm text-white/70">February 22, 2024</p>
+                  <p class="font-semibold">Consulting Partners</p>
+                </div>
+              </div>
+
+              <div class="space-y-6 mt-6">
+                <div>
+                  <p class="text-sm text-white/70">Email :</p>
+                  <p class="font-semibold">info@stackbis.com</p>
+                </div>
+
+                <div>
+                  <p class="text-sm text-white/70">Address :</p>
+                  <p class="font-semibold">Pindale , USA</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- CONTACT -->
+          </div>
+        </div>
+
+        <!-- BOTTOM BAR -->
+        <div class="border-t border-white/20">
+          <div
+            class="bg-secondary max-w-7xl mx-auto px-6 py-6 flex flex-col-reverse md:flex-row justify-between items-center gap-4 text-sm"
+          >
+            <p>Copyright ©2026 StackBis. All Rights Reserved</p>
+            <div class="flex gap-6">
+              <a href="./404.html" class="footer-link transition"
+                >Terms & Condition</a
+              >
+              <a href="./404.html" class="footer-link transition"
+                >Privacy Policy</a
+              >
+              <a href="./404.html" class="footer-link transition">Legal</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!------------------------------- JS --------------------------------->
+
+    <!-- SCROLL REVEAL GSAP -->
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+      ScrollTrigger.normalizeScroll(true);
+
+      const splitTypes = document.querySelectorAll(".reveal-type");
+
+      splitTypes.forEach((el) => {
+        const bg = el.dataset.bgColor || "#333";
+        const fg = el.dataset.fgColor || "#fff";
+
+        const text = new SplitType(el, { types: "words" });
+
+        gsap.fromTo(
+          text.words,
+          {
+            color: bg,
+          },
+          {
+            color: fg,
+            ease: "none",
+            stagger: 0.06,
+            scrollTrigger: {
+              trigger: el,
+              start: "top 75%",
+              end: "top 35%",
+              scrub: 3.6, // <-- THIS is smoothness
+              markers: false,
+            },
+          },
+        );
+      });
+    </script>
+
+    <!-- LOADER WITH GSAP ANIMATION -->
+    <script>
+      const chars = document.querySelectorAll("#loaderText span");
+
+      gsap.set(chars, {
+        opacity: 0,
+        x: -20,
+      });
+
+      const loaderTL = gsap.timeline({
+        defaults: { ease: "power3.out" },
+      });
+
+      loaderTL
+        // reveal letters
+        .to(chars, {
+          opacity: 1,
+          letterSpacing: "0.5em",
+          x: 0,
+          duration: 0.9,
+          stagger: 0.1,
+        })
+
+        // pause
+        .to({}, { duration: 0.25 })
+
+        // slide loader up
+        .to("#loader", {
+          yPercent: -100,
+          duration: 0.9,
+          ease: "power3.inOut",
+          onComplete: () => {
+            document.getElementById("loader").remove();
+
+            gsap.fromTo(
+              "#site",
+              { opacity: 0 },
+              {
+                opacity: 1,
+                duration: 0.6,
+                ease: "power3.out",
+              },
+            );
+
+            document.dispatchEvent(new Event("loader:done"));
+          },
+        });
+    </script>
+
+    <!-- CURSOR JS IWTH JQUERY  -->
+    <script>
+      jQuery(document).ready(function ($) {
+        const cursor = $(".cursor");
+
+        $(document).on("mousemove", function (e) {
+          cursor.css({
+            top: e.clientY,
+            left: e.clientX,
+          });
+        });
+
+        $("a").on("mouseenter", function () {
+          cursor.addClass("hovered");
+        });
+
+        $("a").on("mouseleave", function () {
+          cursor.removeClass("hovered");
+        });
+        $("i").on("mouseenter", function () {
+          cursor.addClass("hovered");
+        });
+
+        $("i").on("mouseleave", function () {
+          cursor.removeClass("hovered");
+        });
+        $("button").on("mouseenter", function () {
+          cursor.addClass("hovered");
+        });
+
+        $("button").on("mouseleave", function () {
+          cursor.removeClass("hovered");
+        });
+      });
+    </script>
+
+    <!-- ROUNDED NAVBAR ANIMATION JS -->
+    <script>
+      const navbar = document.getElementById("navbar");
+      const home = document.getElementById("home");
+
+      let isFlat = false;
+
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          // SCROLL DOWN → HOME OUT
+          if (!entry.isIntersecting && !isFlat) {
+            isFlat = true;
+
+            gsap.fromTo(
+              navbar,
+              {
+                opacity: 0,
+                y: -200,
+              },
+              {
+                opacity: 1,
+                y: 0,
+                duration: 1.8,
+                ease: "power3.out",
+              },
+            );
+          }
+
+          // SCROLL UP → HOME IN
+          if (entry.isIntersecting && isFlat) {
+            isFlat = false;
+
+            gsap.to(navbar, {
+              duration: 0.8,
+              ease: "power3.out",
+            });
+          }
+        },
+        {
+          threshold: 0,
+          rootMargin: "-100px 0px 0px 0px",
+        },
+      );
+
+      observer.observe(home);
+    </script>
+
+    <!-- NAVBAR GSAP -->
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      /* =========================
+     ELEMENTS
+  ========================= */
+      const submenus = document.querySelectorAll(".submenu");
+      const toggles = document.querySelectorAll(".submenu-toggle");
+      const mobileMenu = document.querySelector(".mobile-menu");
+      const hamburger = document.querySelector(".hamburger");
+      const mobileClose = document.querySelector(".mobile-close");
+
+      /* =========================
+     INITIAL STATES
+  ========================= */
+
+      // Submenus (absolute, no layout issues)
+      gsap.set(submenus, {
+        autoAlpha: 0,
+        y: 16,
+        pointerEvents: "none",
+      });
+
+      // Mobile menu starts offscreen
+      gsap.set(mobileMenu, { x: "100%" });
+
+      /* =========================
+     SUBMENU TOGGLE (+ ICON)
+  ========================= */
+      toggles.forEach((toggle) => {
+        toggle.addEventListener("click", (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+
+          const item = toggle.closest(".has-sub");
+          const submenu = item.querySelector(".submenu");
+          const isOpen = submenu.classList.contains("is-open");
+
+          closeAllSubmenus(submenu);
+
+          if (!isOpen) openSubmenu(submenu);
+        });
+      });
+
+      function openSubmenu(menu) {
+        menu.classList.add("is-open");
+        gsap.killTweensOf(menu);
+
+        gsap.to(menu, {
+          autoAlpha: 1,
+          y: 0,
+          duration: 0.35,
+          ease: "power3.out",
+          pointerEvents: "auto",
+        });
+      }
+
+      function closeSubmenu(menu) {
+        menu.classList.remove("is-open");
+        gsap.killTweensOf(menu);
+
+        gsap.to(menu, {
+          autoAlpha: 0,
+          y: 16,
+          duration: 0.25,
+          ease: "power3.in",
+          pointerEvents: "none",
+        });
+      }
+
+      function closeAllSubmenus(except = null) {
+        submenus.forEach((menu) => {
+          if (menu !== except && menu.classList.contains("is-open")) {
+            closeSubmenu(menu);
+          }
+        });
+      }
+
+      /* =========================
+     CLICK OUTSIDE TO CLOSE SUBMENUS
+  ========================= */
+      document.addEventListener("click", () => {
+        closeAllSubmenus();
+      });
+
+      submenus.forEach((menu) => {
+        menu.addEventListener("click", (e) => e.stopPropagation());
+      });
+
+      /* =========================
+     MOBILE MENU OPEN
+     (REMOVE hidden FIRST)
+  ========================= */
+      hamburger.addEventListener("click", () => {
+        // make element renderable
+        mobileMenu.classList.remove("hidden");
+
+        // ensure start position
+        gsap.set(mobileMenu, { x: "100%" });
+
+        gsap.to(mobileMenu, {
+          x: 0,
+          duration: 0.5,
+          ease: "power3.out",
+        });
+      });
+
+      /* =========================
+     MOBILE MENU CLOSE
+     (ADD hidden AFTER)
+  ========================= */
+      mobileClose.addEventListener("click", () => {
+        gsap.to(mobileMenu, {
+          x: "100%",
+          duration: 0.4,
+          ease: "power3.in",
+          onComplete: () => {
+            mobileMenu.classList.add("hidden");
+          },
+        });
+
+        closeAllSubmenus();
+      });
+    </script>
+
+    <!-- HOME GSAP -->
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      /* -------------------------------------------------
+     GLOBAL MOTION PREFERENCE
+  ------------------------------------------------- */
+      const prefersReducedMotion1 = window.matchMedia(
+        "(prefers-reduced-motion: reduce)",
+      ).matches;
+
+      const HERO_DUR = prefersReducedMotion1 ? 0.01 : 0.9;
+
+      /* -------------------------------------------------
+     WAIT FOR LOADER COMPLETION
+  ------------------------------------------------- */
+      document.addEventListener("loader:done", () => {
+        initHeroIntro();
+        initHeroVideoModal();
+      });
+
+      /* -------------------------------------------------
+     HERO INTRO (NOT SCROLL-BASED)
+  ------------------------------------------------- */
+      function initHeroIntro() {
+        const tl = gsap.timeline({
+          defaults: { ease: "power3.out" },
+        });
+
+        tl.from(".hero-text-wrap > *", {
+          opacity: 0,
+          y: 30,
+          duration: 1.7,
+          stagger: 0.3,
+        })
+          .from(
+            ".hero-media-wrap",
+            {
+              opacity: 0,
+              scale: 0.5,
+              duration: 1.7,
+            },
+            "-=0.6",
+          )
+          .from(
+            ".hero-play",
+            {
+              opacity: 1,
+              duration: 0.5,
+            },
+            "-=0.4",
+          );
+
+        // Floating play badge (after intro finishes)
+        if (!prefersReducedMotion1) {
+          gsap.to(".hero-play", {
+            y: -10,
+            duration: 2.5,
+            ease: "sine.inOut",
+            repeat: -1,
+            yoyo: true,
+            delay: 0.3,
+          });
+        }
+      }
+
+      /* -------------------------------------------------
+     VIDEO MODAL (GSAP CONTROLLED)
+  ------------------------------------------------- */
+      function initHeroVideoModal() {
+        const modal = document.querySelector(".hero-modal");
+        const openBtn = document.querySelector(".hero-play");
+        const closeBtn = document.querySelector(".hero-modal-close");
+        const videoWrap = document.querySelector(".hero-video-container");
+
+        if (!modal || !openBtn || !closeBtn || !videoWrap) return;
+
+        const modalInner = modal.querySelector("div");
+
+        function openModal() {
+          modal.classList.remove("hidden");
+          modal.classList.add("flex");
+
+          // Lazy-load YouTube iframe
+          videoWrap.innerHTML = `
+        <iframe
+          src="https://www.youtube.com/embed/VIDEO_ID?autoplay=1"
+          class="w-full h-full"
+          allow="autoplay; fullscreen"
+        ></iframe>
+      `;
+
+          if (prefersReducedMotion1) {
+            modal.style.opacity = "1";
+            modalInner.style.transform = "none";
+            return;
+          }
+
+          gsap.fromTo(
+            modal,
+            { opacity: 0 },
+            { opacity: 1, duration: 0.4, ease: "power2.out" },
+          );
+
+          gsap.fromTo(
+            modalInner,
+            { scale: 0.9, y: 40 },
+            { scale: 1, y: 0, duration: 0.5, ease: "power2.out" },
+          );
+        }
+
+        function closeModal() {
+          if (prefersReducedMotion1) {
+            cleanup();
+            return;
+          }
+
+          gsap.to(modalInner, {
+            scale: 0.9,
+            y: 40,
+            duration: 0.3,
+            ease: "power2.in",
+          });
+
+          gsap.to(modal, {
+            opacity: 0,
+            duration: 0.3,
+            onComplete: cleanup,
+          });
+        }
+
+        function cleanup() {
+          modal.classList.add("hidden");
+          modal.classList.remove("flex");
+          modal.style.opacity = "";
+          videoWrap.innerHTML = "";
+        }
+
+        /* ---------- EVENTS ---------- */
+        openBtn.addEventListener("click", openModal);
+        closeBtn.addEventListener("click", closeModal);
+
+        modal.addEventListener("click", (e) => {
+          if (e.target === modal) closeModal();
+        });
+
+        document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+            closeModal();
+          }
+        });
+      }
+    </script>
+
+    <!-- STORY GSAP -->
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      const prefersReducedMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)",
+      ).matches;
+
+      const DURATION = prefersReducedMotion ? 0.01 : 0.9;
+
+      /* IMAGE GRID */
+      gsap.from(".about-img", {
+        opacity: 0,
+        y: 40,
+        duration: DURATION,
+        ease: "power2.out",
+        stagger: 0.12,
+        scrollTrigger: {
+          trigger: ".about-root",
+          start: "top 70%",
+        },
+      });
+
+      /* CONTENT */
+      gsap.from(".about-title", {
+        opacity: 0,
+        y: 30,
+        duration: DURATION,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".about-root",
+          start: "top 70%",
+        },
+      });
+
+      gsap.from(".about-desc", {
+        opacity: 0,
+        y: 24,
+        duration: DURATION,
+        ease: "power2.out",
+        delay: 0.1,
+        scrollTrigger: {
+          trigger: ".about-root",
+          start: "top 70%",
+        },
+      });
+
+      gsap.from(".about-stats > div", {
+        opacity: 0,
+        y: 20,
+        duration: DURATION,
+        ease: "power2.out",
+        stagger: 0.15,
+        delay: 0.15,
+        scrollTrigger: {
+          trigger: ".about-root",
+          start: "top 70%",
+        },
+      });
+
+      gsap.from(".about-btn", {
+        opacity: 0,
+        y: 20,
+        duration: DURATION,
+        ease: "power2.out",
+        delay: 0.25,
+        scrollTrigger: {
+          trigger: ".about-root",
+          start: "top 70%",
+        },
+      });
+    </script>
+
+    <!-- HIGH IMPACT GSAP -->
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      const prefersReducedMotion2 = window.matchMedia(
+        "(prefers-reduced-motion: reduce)",
+      ).matches;
+
+      const DUR = prefersReducedMotion2 ? 0.01 : 0.8;
+
+      /* INTRO */
+      gsap.from(".services-title", {
+        opacity: 0,
+        y: 30,
+        duration: DUR,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".services-root",
+          start: "top 70%",
+        },
+      });
+
+      gsap.from(".services-desc", {
+        opacity: 0,
+        y: 24,
+        duration: DUR,
+        delay: 0.1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".services-root",
+          start: "top 70%",
+        },
+      });
+
+      gsap.from(".service-btn", {
+        opacity: 0,
+        y: 20,
+        duration: DUR,
+        delay: 0.2,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".services-root",
+          start: "top 70%",
+        },
+      });
+
+      /* CARDS — ONE BY ONE */
+      gsap.from(".service-card", {
+        opacity: 0,
+        y: 40,
+        duration: DUR,
+        ease: "power2.out",
+        stagger: 0.15,
+        scrollTrigger: {
+          trigger: ".services-grid",
+          start: "top 75%",
+        },
+      });
+
+      gsap.from(".service-card1", {
+        opacity: 0,
+        y: 40,
+        duration: DUR,
+        ease: "power2.out",
+        stagger: 0.15,
+        scrollTrigger: {
+          trigger: ".services-title",
+          start: "top 75%",
+        },
+      });
+    </script>
+
+    <!-- STATS GSAP -->
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      const prefersReducedMotion3 = window.matchMedia(
+        "(prefers-reduced-motion: reduce)",
+      ).matches;
+
+      const DUR1 = prefersReducedMotion ? 0.01 : 0.8;
+
+      /* TITLE */
+      gsap.from(".results-title", {
+        opacity: 0,
+        y: 30,
+        duration: DUR1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".results-root",
+          start: "top 70%",
+        },
+      });
+
+      gsap.from(".results-desc", {
+        opacity: 0,
+        y: 24,
+        duration: DUR1,
+        delay: 0.1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".results-root",
+          start: "top 70%",
+        },
+      });
+
+      /* STATS REVEAL */
+      gsap.from(".result-item", {
+        opacity: 0,
+        y: 30,
+        duration: DUR1,
+        ease: "power2.out",
+        stagger: 0.15,
+        scrollTrigger: {
+          trigger: ".results-stats",
+          start: "top 80%",
+        },
+      });
+
+      /* COUNT-UP */
+      document.querySelectorAll(".count-num").forEach((el) => {
+        const target = +el.dataset.count;
+
+        gsap.fromTo(
+          el,
+          { innerText: 0 },
+          {
+            innerText: target,
+            duration: prefersReducedMotion3 ? 0.01 : 1.6,
+            ease: "power1.out",
+            snap: { innerText: 1 },
+            scrollTrigger: {
+              trigger: ".results-stats",
+              start: "top 80%",
+              once: true,
+            },
+          },
+        );
+      });
+    </script>
+
+    <!-- STEPS GSAP -->
+    <script>
+      const processData = [
+        {
+          title: "1. Analysis & Research",
+          desc: "We begin by conducting in-depth research and data analysis to understand business challenges, market conditions, and operational gaps. Our approach focuses on identifying root causes, evaluating opportunities, and gathering actionable insights that support informed decision-making. This foundation ensures that every strategy we develop is grounded in evidence, aligned with business objectives, and built for long-term success.",
+          icon: "fa-magnifying-glass",
+          image: "./src/assets/p1.webp",
+        },
+        {
+          title: "2. Project Execution",
+          desc: "Once the strategy is defined, we move into disciplined execution with a clear focus on timelines, resources, and accountability. Our team coordinates closely with stakeholders to manage tasks, mitigate risks, and ensure consistent progress at every stage. Through structured monitoring and transparent communication, we deliver projects efficiently while maintaining quality and alignment with business objectives.",
+          icon: "fa-brain",
+          image: "./src/assets/p2.webp",
+        },
+        {
+          title: "3. Project Launch",
+          desc: "At launch, we ensure a smooth and controlled transition from development to live operations. This includes final validations, stakeholder alignment, and readiness checks to minimize risk and disruption. Our team supports deployment, monitors initial performance, and addresses issues proactively, ensuring the project delivers immediate value and is positioned for long-term success. we deliver projects efficiently while maintaining quality and alignment.",
+          icon: "fa-rocket",
+          image: "./src/assets/p3.webp",
+        },
+      ];
+
+      gsap.registerPlugin(ScrollTrigger);
+
+      const tabs = document.querySelectorAll(".process-tab");
+      const img = document.querySelector(".process-image");
+      const heading = document.querySelector(".process-heading");
+      const desc = document.querySelector(".process-desc");
+      const pbtn = document.querySelector(".process-btn");
+      const iconWrap = document.querySelector(".process-content i");
+
+      let current = 0;
+      let autoTimer;
+
+      function animateOut() {
+        return gsap
+          .timeline()
+          .to(img, {
+            y: 30,
+            scale: 0.96,
+            opacity: 0,
+            duration: 0.45,
+            ease: "power2.inOut",
+          })
+          .to(
+            [heading, desc, pbtn],
+            {
+              y: 20,
+              opacity: 0,
+              duration: 0.35,
+              ease: "power2.inOut",
+            },
+            "<",
+          )
+          .to(
+            iconWrap,
+            {
+              scale: 0.85,
+              opacity: 0,
+              duration: 0.25,
+              ease: "power2.inOut",
+            },
+            "<",
+          );
+      }
+
+      function animateIn() {
+        return gsap
+          .timeline()
+          .fromTo(
+            img,
+            {
+              y: -40,
+              scale: 1.05,
+              opacity: 0,
+            },
+            {
+              y: 0,
+              scale: 1,
+              opacity: 1,
+              duration: 0.9,
+              ease: "power3.out",
+            },
+          )
+          .fromTo(
+            heading,
+            {
+              y: 30,
+              opacity: 0,
+            },
+            {
+              y: 0,
+              opacity: 1,
+              duration: 0.7,
+              ease: "power3.out",
+            },
+            "-=0.55",
+          )
+          .fromTo(
+            desc,
+            {
+              y: 24,
+              opacity: 0,
+            },
+            {
+              y: 0,
+              opacity: 1,
+              duration: 0.6,
+              ease: "power3.out",
+            },
+            "-=0.45",
+          )
+          .fromTo(
+            pbtn,
+            {
+              y: 24,
+              opacity: 0,
+            },
+            {
+              y: 0,
+              opacity: 1,
+              duration: 0.5,
+              ease: "power3.out",
+            },
+            "-=0.35",
+          )
+          .fromTo(
+            iconWrap,
+            {
+              scale: 0.7,
+              opacity: 0,
+            },
+            {
+              scale: 1,
+              opacity: 1,
+              duration: 0.5,
+              ease: "back.out(1.7)",
+            },
+            "-=0.6",
+          );
+      }
+
+      function setActiveTab(index) {
+        tabs.forEach((t) => t.classList.remove("bg-teal-900", "text-white"));
+        tabs[index].classList.add("bg-teal-900", "text-white");
+      }
+
+      function updateStep(index) {
+        animateOut().then(() => {
+          const data = processData[index];
+          img.src = data.image;
+          heading.textContent = data.title;
+          desc.textContent = data.desc;
+          iconWrap.className = `fa-solid ${data.icon} text-black`;
+
+          setActiveTab(index);
+          animateIn();
+          current = index;
+        });
+      }
+
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          clearInterval(autoTimer);
+          updateStep(+tab.dataset.step);
+          startAuto();
+        });
+      });
+
+      function startAuto() {
+        autoTimer = setInterval(() => {
+          updateStep((current + 1) % processData.length);
+        }, 4000);
+      }
+
+      /* SCROLL REVEAL */
+      gsap.from(".process-stage", {
+        opacity: 0,
+        y: 40,
+        duration: 0.9,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".process-root",
+          start: "top 75%",
+        },
+      });
+
+      startAuto();
+    </script>
+
+    <!-- CASE STUDIES GSAP -->
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      const prefersReducedMotion6 = window.matchMedia(
+        "(prefers-reduced-motion: reduce)",
+      ).matches;
+
+      const DUR4 = prefersReducedMotion6 ? 0.01 : 0.8;
+
+      gsap.from(".case-title", {
+        opacity: 0,
+        y: 30,
+        duration: DUR4,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".case-root",
+          start: "top 75%",
+        },
+      });
+
+      gsap.from(".case-desc", {
+        opacity: 0,
+        y: 24,
+        duration: DUR4,
+        delay: 0.1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".case-root",
+          start: "top 75%",
+        },
+      });
+
+      gsap.from(".case-btn", {
+        opacity: 0,
+        y: 20,
+        duration: DUR4,
+        delay: 0.2,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".case-root",
+          start: "top 75%",
+        },
+      });
+
+      gsap.from(".case-card", {
+        opacity: 0,
+        y: 40,
+        duration: DUR4,
+        ease: "power2.out",
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: ".case-grid",
+          start: "top 80%",
+        },
+      });
+    </script>
+
+    <!-- TEAMS -->
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      gsap.from(".team-header", {
+        opacity: 0,
+        y: 40,
+        duration: 0.8,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: ".team-section",
+          start: "top 75%",
+        },
+      });
+
+      gsap.from(".team-card", {
+        opacity: 0,
+        y: 50,
+        duration: 0.8,
+        ease: "power3.out",
+        stagger: 0.15,
+        scrollTrigger: {
+          trigger: ".team-grid",
+          start: "top 75%",
+        },
+      });
+    </script>
+
+    <!-- TESTIMONIAL GSAP -->
+    <script>
+      const testimonials = [
+        {
+          text: `"The team brought structure and clarity to areas of our business that were holding us back. Their strategic approach and hands-on execution delivered measurable improvements within months.`,
+          name: "John Doe",
+          role: "Chief Executive Officer",
+          stars: 5,
+          avatar: "./src/assets/t1.webp",
+        },
+        {
+          text: `"What stood out was their ability to simplify complex operational challenges. Processes became clearer, accountability improved, and our teams now execute with confidence.`,
+          name: "Wesley Bates",
+          role: "Operations Manager",
+          stars: 4,
+          avatar: "./src/assets/t2.webp",
+        },
+        {
+          text: `“Their consulting support helped us scale without losing control. From planning to execution, every recommendation was practical, confidence and results-driven.”`,
+          name: "Anshika Smith",
+          role: "Managing Director",
+          stars: 5,
+          avatar: "./src/assets/t3.webp",
+        },
+      ];
+
+      const bigTestimonial = document.getElementById("bigTestimonial");
+      const bigName = document.getElementById("bigName");
+      const bigRole = document.getElementById("bigRole");
+      const bigAvatar = document.getElementById("bigAvatar");
+      const bigStars = document.getElementById("bigStars");
+      const avatarWrapper = document.getElementById("avatarWrapper");
+      const buttons = document.querySelectorAll(".testimonial-btn");
+
+      let current1 = 0;
+
+      function animateSmoothChange(element) {
+        element.classList.add("opacity-0");
+        setTimeout(() => {
+          element.classList.remove("opacity-0");
+        }, 200);
+      }
+
+      function updateCard(index) {
+        const t = testimonials[index];
+        current1 = index;
+
+        // Smooth Fade Animations
+        animateSmoothChange(bigTestimonial);
+        animateSmoothChange(bigName);
+        animateSmoothChange(bigRole);
+        animateSmoothChange(bigStars);
+        bigAvatar.classList.add("scale-75", "opacity-0");
+
+        setTimeout(() => {
+          bigTestimonial.textContent = t.text;
+          bigName.textContent = t.name;
+          bigRole.textContent = t.role;
+          bigAvatar.src = t.avatar;
+          bigStars.innerHTML = "★".repeat(t.stars);
+
+          bigAvatar.classList.remove("scale-75", "opacity-0");
+        }, 200);
+
+        // Highlight Active Button
+        buttons.forEach((btn) =>
+          btn.classList.remove("border-teal-600", "shadow-xl", "scale-[1.02]"),
+        );
+        buttons[index].classList.add(
+          "border-teal-600",
+          "shadow-xl",
+          "scale-[1.02]",
+        );
+      }
+
+      // Event Listeners
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => updateCard(btn.dataset.index));
+      });
+
+      // Auto Slide
+      setInterval(() => {
+        current1 = (current1 + 1) % testimonials.length;
+        updateCard(current1);
+      }, 4500);
+
+      updateCard(0);
+    </script>
+
+    <!-- BLOGS GSAP -->
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      const prefersReducedMotion4 = window.matchMedia(
+        "(prefers-reduced-motion: reduce)",
+      ).matches;
+
+      const DUR2 = prefersReducedMotion4 ? 0.01 : 0.8;
+
+      /* HEADER */
+      gsap.from(".blog-title", {
+        opacity: 0,
+        y: 30,
+        duration: DUR2,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".blog-root",
+          start: "top 70%",
+        },
+      });
+
+      gsap.from(".browse-btn", {
+        opacity: 0,
+        y: 20,
+        duration: DUR2,
+        delay: 0.15,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".blog-root",
+          start: "top 70%",
+        },
+      });
+
+      /* CARDS */
+      gsap.from(".blog-card", {
+        opacity: 0,
+        y: 40,
+        duration: DUR2,
+        ease: "power2.out",
+        stagger: 0.18,
+        scrollTrigger: {
+          trigger: ".blog-grid",
+          start: "top 75%",
+        },
+      });
+    </script>
+
+    <!-- FAQ GSAP -->
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      /* SCROLL REVEAL */
+      gsap.from(".faq-header", {
+        opacity: 0,
+        y: 40,
+        duration: 0.8,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: ".faq-section",
+          start: "top 75%",
+        },
+      });
+
+      gsap.from(".faq-item", {
+        opacity: 0,
+        y: 30,
+        duration: 0.7,
+        stagger: 0.1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: ".faq-grid",
+          start: "top 80%",
+        },
+      });
+
+      /* ACCORDION LOGIC */
+      const faqItems = document.querySelectorAll(".faq-item");
+
+      faqItems.forEach((item) => {
+        const question = item.querySelector(".faq-question");
+        const answer = item.querySelector(".faq-answer");
+
+        gsap.set(answer, { height: 0 });
+
+        question.addEventListener("click", () => {
+          // Close others
+          faqItems.forEach((other) => {
+            if (other !== item) {
+              other.classList.remove("active");
+              gsap.to(other.querySelector(".faq-answer"), {
+                height: 0,
+                duration: 0.4,
+                ease: "power2.out",
+              });
+            }
+          });
+
+          const isOpen = item.classList.contains("active");
+          item.classList.toggle("active");
+
+          gsap.to(answer, {
+            height: isOpen ? 0 : answer.scrollHeight,
+            duration: 0.45,
+            ease: "power2.out",
+          });
+        });
+      });
+    </script>
+
+    <!-- CONTACT FORM GSAP -->
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      gsap.from(".contact-copy", {
+        opacity: 0,
+        x: -60,
+        duration: 0.9,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: ".contact-form-section",
+          start: "top 75%",
+        },
+      });
+
+      gsap.from(".contact-form-wrapper", {
+        opacity: 0,
+        x: 60,
+        duration: 0.9,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: ".contact-form-section",
+          start: "top 75%",
+        },
+      });
+    </script>
+
+    <!-- CONTACT FORM VALIDATION -->
+    <script>
+      const form = document.querySelector(".contact-form-wrapper");
+      const emailInput = document.querySelector(".contact-email");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const emailValue = emailInput.value.trim();
+
+        // Reset title first
+        emailInput.title = "";
+
+        if (!emailValue.endsWith("@gmail.com")) {
+          emailInput.title = "Accept only gmail.com";
+          emailInput.focus();
+          return;
+        }
+
+        // Clear all fields
+        form.reset();
+
+        // Redirect
+        window.location.href = "./404.html";
+      });
+    </script>
+
+    <!-- FOOTER GSAP -->
+    <script>
+      gsap.registerPlugin(ScrollTrigger);
+
+      const prefersReducedMotion5 = window.matchMedia(
+        "(prefers-reduced-motion: reduce)",
+      ).matches;
+
+      const DUR3 = prefersReducedMotion5 ? 0.01 : 0.8;
+
+      /* FOOTER COLUMNS */
+      gsap.from(".footer-col", {
+        opacity: 0,
+        y: 30,
+        duration: DUR3,
+        ease: "power2.out",
+        stagger: 0.15,
+        scrollTrigger: {
+          trigger: ".footer-root",
+          start: "top 85%",
+        },
+      });
+    </script>
+
+    <!-- SCROLL TO TOP GSAP -->
+    <script>
+      document.addEventListener("loader:done", () => {
+        const wrap = document.querySelector(".scroll-top-wrap");
+        const btn = document.querySelector(".scroll-top-btn");
+        const percentText = document.querySelector(".scroll-percent");
+        const progressBar = document.querySelector(".progress-bar");
+
+        const circumference = 175.93; // exact
+
+        // initial state (NOT display:none)
+        gsap.set(wrap, {
+          autoAlpha: 0,
+          y: 20,
+        });
+
+        function updateProgress() {
+          const scrollTop = window.scrollY;
+          const docHeight =
+            document.documentElement.scrollHeight - window.innerHeight;
+
+          const progress = Math.min(scrollTop / docHeight, 1);
+          const percent = Math.round(progress * 100);
+
+          percentText.textContent = `${percent}%`;
+          progressBar.style.strokeDashoffset =
+            circumference - progress * circumference;
+
+          if (scrollTop > 300) {
+            gsap.to(wrap, {
+              autoAlpha: 1,
+              y: 0,
+              duration: 0.3,
+              ease: "power2.out",
+            });
+          } else {
+            gsap.to(wrap, {
+              autoAlpha: 0,
+              y: 20,
+              duration: 0.3,
+              ease: "power2.in",
+            });
+          }
+        }
+
+        window.addEventListener("scroll", updateProgress);
+        updateProgress();
+
+        btn.addEventListener("click", () => {
+          gsap.to(window, {
+            scrollTo: 0,
+            duration: 0.9,
+            ease: "power3.inOut",
+          });
+        });
+      });
+    </script>
+
+    <!-- LENIS JS -->
+    <script>
+      // Initialize a new Lenis instance for smooth scrolling
+      const lenis = new Lenis({
+        duration: 2, // Smoothness (1–1.5 recommended)
+        // easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // Natural ease
+        easing: (t) => 1 - Math.pow(1 - t, 4),
+        smoothWheel: true, // Mouse wheel smoothing
+        smoothTouch: false, // Disable on mobile (better UX)
+      });
+
+      // Synchronize Lenis scrolling with GSAP's ScrollTrigger plugin
+      lenis.on("scroll", ScrollTrigger.update);
+
+      // Add Lenis's requestAnimationFrame (raf) method to GSAP's ticker
+      // This ensures Lenis's smooth scroll animation updates on each GSAP tick
+      gsap.ticker.add((time) => {
+        lenis.raf(time * 1000); // Convert time from seconds to milliseconds
+      });
+
+      // Disable lag smoothing in GSAP to prevent any delay in scroll animations
+      gsap.ticker.lagSmoothing(0);
+    </script>
+
+    <!-- SCROLL TO TOP -->
+    <div class="scroll-top-wrap overflow-hidden">
+      <svg class="scroll-progress" width="64" height="64" viewBox="0 0 64 64">
+        <!-- background ring -->
+        <circle
+          cx="32"
+          cy="32"
+          r="28"
+          fill="none"
+          stroke="rgba(0,0,0,0.15)"
+          stroke-width="4"
+        />
+
+        <!-- progress ring -->
+        <circle
+          class="progress-bar"
+          cx="32"
+          cy="32"
+          r="28"
+          fill="none"
+          stroke="#0f766e"
+          stroke-width="4"
+          stroke-linecap="round"
+        />
+      </svg>
+
+      <button class="scroll-top-btn cursor-pointer">
+        <span class="scroll-percent">0%</span>
+      </button>
+    </div>
+  </body>
+</html>

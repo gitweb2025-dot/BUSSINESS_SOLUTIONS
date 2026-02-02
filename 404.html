@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>StackBis | 404</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="title"
+      content="StackBis | 404"
+    />
+    <meta
+      name="description"
+      content="StackBis is a business solutions and consulting firm helping organizations improve performance, streamline operations, and achieve sustainable growth through strategy and execution."
+    />
+    <meta
+      name="keywords"
+      content="business solutions, consulting firm, strategy consulting, operations consulting, project management, process optimization, StackBis"
+    />
+    <meta name="author" content="StackBis" />
+
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="StackBis | 404"
+    />
+    <meta
+      property="og:description"
+      content="We deliver strategic business solutions that help organizations scale efficiently, optimize operations, and achieve measurable results."
+    />
+
+    <!-- GSAP -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+    <!-- ScrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+    <!-- ScrollTo -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollToPlugin.min.js"></script>
+    <!-- ScrollSmoother  -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"></script>
+    <!-- SplitText -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/SplitText.min.js"></script>
+    <!-- RoughEase, ExpoScaleEase and SlowMo are all included in the EasePack file -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/EasePack.min.js"></script>
+
+    <!-- SplitType -->
+    <script src="https://unpkg.com/split-type"></script>
+
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- GOOGLE FONT CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Cinzel:wght@400..900&family=Dancing+Script:wght@400..700&family=Della+Respira&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Julius+Sans+One&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Outfit:wght@100..900&family=Rajdhani:wght@300;400;500;600;700&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- TAILWIND CSS -->
+    <link rel="stylesheet" href="./dist/output.css" />
+
+    <!-- 404 -->
+    <style>
+      .primary-btn:hover {
+        box-shadow: 0 14px 30px rgba(163, 230, 53, 0.35);
+      }
+
+      .secondary-btn:hover {
+        background-color: #000;
+        color: #fff;
+      }
+    </style>
+  </head>
+
+  <body
+    class="bg-[#f8f8f2] font-primary min-h-screen flex items-center justify-center"
+  >
+    <section class="max-w-4xl px-6 text-center error-root overflow-hidden">
+      <h1 class="text-[120px] font-bold leading-none error-code">404</h1>
+
+      <h2 class="text-4xl font-semibold mt-6 error-title">
+        Page not found
+        <span class="block w-24 h-1 bg-teal-700 mx-auto mt-3"></span>
+      </h2>
+
+      <p class="text-zinc-600 max-w-xl mx-auto mt-6 error-text">
+        The page you’re looking for doesn’t exist or may have been moved. Don’t
+        worry — our team is always here to guide you back on track.
+      </p>
+
+      <div class="flex flex-wrap justify-center gap-6 mt-12 error-actions">
+        <a
+          href="./index.html"
+          class="primary-btn bg-lime-300 px-8 py-4 rounded-md font-medium flex items-center gap-3"
+        >
+          <i class="fa-solid fa-arrow-left"></i>
+          Back to Home
+        </a>
+      </div>
+
+      <!-- Decorative line -->
+      <div class="mt-16 flex justify-center">
+        <div class="w-40 h-0.5 bg-teal-700 error-line"></div>
+      </div>
+    </section>
+
+    <!-- GSAP -->
+    <script>
+      const prefersReducedMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)",
+      ).matches;
+
+      if (!prefersReducedMotion) {
+        const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
+
+        tl.from(".error-code", {
+          opacity: 0,
+          y: 40,
+          duration: 0.9,
+        })
+          .from(
+            ".error-title",
+            {
+              opacity: 0,
+              y: 30,
+              duration: 0.7,
+            },
+            "-=0.4",
+          )
+          .from(
+            ".error-text",
+            {
+              opacity: 0,
+              y: 20,
+              duration: 0.6,
+            },
+            "-=0.3",
+          )
+          .from(
+            ".error-actions",
+            {
+              opacity: 0,
+              y: 20,
+              duration: 0.6,
+            },
+            "-=0.3",
+          )
+          .from(
+            ".error-line",
+            {
+              scaleX: 0,
+              transformOrigin: "center",
+              duration: 0.6,
+            },
+            "-=0.2",
+          );
+      }
+    </script>
+  </body>
+</html>
